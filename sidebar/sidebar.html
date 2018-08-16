@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sidebar</title>
+	<style type="text/css">
+
+	.btn{
+		display: inline-block;
+		padding: 0.75em 1em;
+		font-size: 2em;
+		color: #fff;
+		background-color: #1ce;
+		text-decoration: none;
+		text-transform: uppercase;
+		border: 1px solid transparent;
+		border-radius: 0.3em;
+	}
+
+	.sidebar{
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 300px;
+		background-color: silver;
+		color: #333;
+		transition: transform 0.3s ease-out;
+	}
+
+	.sidebar.is-hidden{
+		transform: translateX(300px);
+	}
+
+	.sidebar ul{
+		margin: 0;
+		padding: 0;
+	}
+
+	.sidebar li{
+		list-style: none;
+	}
+
+	.sidebar li + li{
+		border-top: 1px solid white;
+	}
+
+	.sidebar a{
+		display: block;
+		padding: 1em 1.5em;
+		color: #fff;
+		text-decoration: none;
+	}
+
+</style>
+
+
+
+
+</head>
+<body>
+
+
+	<a href="#" class="btn">Click Me</a>
+
+	<div class="sidebar is-hidden">
+		<ul>
+			<li><a href="#">link 1</a></li>
+			<li><a href="#">link 2</a></li>
+			<li><a href="#">link 3</a></li>
+			<li><a href="#">link 4</a></li>
+			<li><a href="#">link 5</a></li>
+		</ul>
+	</div>																																		
+
+
+<script type="text/javascript">
+
+
+	var button = document.querySelector('btn');
+	var sidebar = document.querySelector('sidebar');
+
+	button.addEventListener('click', function() {
+		sidebar.classList.toggle('is-hidden')
+	}, false);
+
+
+</script>
+
+
+
+
+	
+</body>
+</html>

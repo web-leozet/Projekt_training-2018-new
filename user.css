@@ -1,0 +1,41 @@
+.unselectable{
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+img{
+	padding-left: 5px;
+}
+#p1,#p2,.log{
+    width: 15%;
+    border: solid 2px brown;
+    padding: 2px 10px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+#list{
+	display: inline-block;
+	border: 2px dotted green;
+	list-style: none;
+	padding: 10px 20px;
+	border-radius: 4px;
+}
+
+.forms{
+	position: absolute;
+  left: 250px;
+  top: 12%;
+}
+.position{
+	margin-bottom: 2px;
+	display: block;
+	width: 100%;
+	overflow: visible;
+}
+
+p#output{
+	display: inline-block;
+}
