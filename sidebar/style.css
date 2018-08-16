@@ -12,6 +12,14 @@
 	background-color: #1ce;
 	border-radius: 4px;
 	text-transform: uppercase;
+	width: 300px;
+	transition: 0.5s ease-out;
+	text-align: center;
+	margin-left: 20px;
+}
+
+.on{
+	width: 150px;
 }
 
 .sidebar{
@@ -22,7 +30,7 @@
 	width: 300px;
 	height: 215px;
 	background-color: #808080;
-	transition: transform 0.3s ease-out;
+	transition: transform 0.5s ease-out;
 }
 
 .sidebar.is-hidden{
