@@ -21,3 +21,8 @@ var linkOne = document.querySelector('.one');
 linkOne.onclick = function () {
 	alert('Link 1');
 }
+
+
+
+
+

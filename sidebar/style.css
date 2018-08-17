@@ -12,14 +12,14 @@
 	background-color: #1ce;
 	border-radius: 4px;
 	text-transform: uppercase;
-	width: 300px;
+	width: 150px;
 	transition: 0.5s ease-out;
 	text-align: center;
-	margin-left: 20px;
+	margin:20px 0 0 20px;
 }
 
 .on{
-	width: 150px;
+	width: 300px;
 }
 
 .sidebar{
