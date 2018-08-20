@@ -901,7 +901,7 @@ function clearss() {
 
 
 
-	function createNewChild() {
+/*	function createNewChild() {
 		var list = document.getElementById("list");
 		var str = document.createElement("li");
 		console.log(str);
@@ -941,7 +941,7 @@ function clearss() {
 			list.insertBefore(str, list.firstChild);
 			str.setAttribute("style", "color: red; font-Size:25px");
 		}
-	}
+	}*/
 
 
 /*		var a = new String("Hello World");
@@ -968,7 +968,7 @@ document.write("<br/>");
 document.write("<br/>");
 
 
-var pattern = /\d\d\d/;
+/*var pattern = /\d\d\d/;
 
 var input = "Hello World";
 if (pattern.test(input)) {
@@ -986,7 +986,7 @@ if (pattern.test(input)) {
 }
 
 
-console.log("hello");
+console.log("hello");*/
 
 
  /*   var vm = new Vue({
@@ -1050,3 +1050,9 @@ data.price = 20 // при установке свойства вызываетс
 		alert("Body стал красным,а сейчас вернёться обратно!");
 		document.body.style.backgroundColor = '';
 	})();*/
+
+
+
+
+
+
