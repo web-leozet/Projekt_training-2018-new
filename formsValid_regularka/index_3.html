@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style type="text/css">
+	label{
+		display: inline-block;
+		margin-top: 8px; 
+		min-width: 180px;
+	}
+	label[for = 'male']{
+		min-width: 80px
+	}
+	input{
+		margin-top: 8px;
+	}
+	input[type = "submit"]{
+		margin-top: 25px;
+		padding: 5px 20px;
+	}
+
+	.invalid{
+		border: 0.11em solid red;
+	}
+
+</style>
+
+<script type="text/javascript">
+
+	// регистрация события загрузки документа.
+	if (window.addEventListener) window.addEventListener("load", init, false);
+	else if (window.attachEvent) window.attachEvent("onload", init);
+
+// регистрация обработчиков событий элементов формы.
+function init() {
+	form.name.onchange = nameOnChange;
+	form.email.onchange = emailOnChange;
+	form.phones.onchange = phoneOnChange;
+	form.onsubmit = onsubmiHandler;
+}
+
+// обработчики событий изменения текста в окне.
+function nameOnChange() {
+	var pattern = /\S/;
+	validate(this, pattern);
+}
+
+function emailOnChange() {
+	var pattern = /\b[a-z0-9._]+@[a-z0-9.-]+\.[a-z]{2,4}\b/i;
+	validate(this, pattern);
+}
+
+function phoneOnChange() {
+	var pattern = /(^(?!\+.*\(.*\).*\-\-.*$)(?!\+.*\(.*\).*\-$)(\+[0-9]{1,3}\([0-9]{1,3}\)[0-9]{1}([-0-9]{0,8})?([0-9]{0,1})?)$)|(^[0-9]{1,4}$)/;
+	validate(this, pattern);
+}
+
+
+function validate(elem, pattern) {
+	var res = elem.value.search(pattern);
+    if (res == -1) elem.className = "invalid"; // установка CSS класса 
+    else elem.className = "valid";
+  }
+
+
+// событие при отправке формы на сервер.
+function onsubmiHandler() {
+
+	var invalid = false;
+
+	for (var i = 0; i < form.elements.length; ++i) {
+		var e = form.elements[i];
+        // проверка типа элемента и наличия обработчика события onchange.
+        if (e.type == "text" && e.onchange) {
+            e.onchange(); // запуск события onchanhe
+            if (e.className == "invalid") invalid = true;
+          }
+        }
+
+        if (invalid) {
+        	alert("Допущены ошибки при заполнении формы.");
+        return false; // отмена отправки формы.
+      }
+    }
+
+  </script>
+
+</head>
+<body>
+
+	<form action="" method="post" name = "test" id="form">
+
+		<label for="name">Имя:</label>
+		<input class="name invalid" type="text" name="names" id="name" placeholder="Имя"><br/>
+
+		<label for="email">Почта:</label>
+		<input class="name invalid" type="email" name="email" id="emails" placeholder="Email"><br/>
+
+		<label for="phone">Phone:+38(067) 000-00-00</label>
+		<input class="name invalid" type="phone" name="phones" id="phone" placeholder="Phone"><br/>
+
+
+		<input type="submit" name="button" value="Готово"/>
+		
+	</form>
+	
+</body>
+</html>

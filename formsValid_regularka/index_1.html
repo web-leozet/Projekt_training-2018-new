@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>regular</title>
+	<title>forma_regular_valid</title>
 	<style type="text/css">
 	label{
 		display: inline-block;
@@ -20,14 +20,8 @@
 		padding: 5px 20px;
 	}
 
-	.error{
-		border: 1px solid red;
-	}
-
 </style>
 <script type="text/javascript">
-	
-
 
 	function valid(form) {
 		var fail = false;
@@ -38,8 +32,12 @@
 		var repassword = form.rePasswords.value
 		var state = form.state.value
 
+
 		var pattern_Email = /[a-zA-Z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,5}/i;
 		var pattern_phone =  /(^(?!\+.*\(.*\).*\-\-.*$)(?!\+.*\(.*\).*\-$)(\+[0-9]{1,3}\([0-9]{1,3}\)[0-9]{1}([-0-9]{0,8})?([0-9]{0,1})?)$)|(^[0-9]{1,4}$)/;
+
+
+
 
 		if (name == "" || name == " " || name == null) 
 			fail = "Вы не ввели своё имя";
@@ -60,23 +58,8 @@
 		if (fail) 
 			alert(fail);
 		else
-
-			// window.location = "../sidebar/sidebar.html"; // перенаправление на другую страницу
-
-		console.log(name);
-		console.log(email);
-		console.log(phone);
-		console.log(password);
-		console.log(repassword);
-		console.log(state);
-		
+			window.location = "../sidebar/sidebar.html"; // перенаправление на другую страницу
 	}
-
-
-
-
-
-
 </script>
 </head>
 <body>
@@ -104,9 +87,8 @@
 		<input type="radio" name="state" шв	id="female" value="Женский">
 		<label for = "female">Женский</label><br/>
 
-		<input type="button" name="button" value="Готово" onclick="valid(document.getElementById('form'))"/>
-		
-	</form>
+		<input type="button" name="button" value="Готово" onclick="valid(document.getElementById('form'))">
+	</form> 
 
 	
 
