@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cookie</title>
+	<style type="text/css">
+
+	div.img{
+		margin: 0;
+		padding: 0;
+		background-image: url(../img/Beer.png);
+		background-color: red;
+		margin: 0;
+		padding: 0;
+		width: 100px;
+		height: 100px;
+		background-repeat: no-repeat;
+		background-position: 50%;
+		border: 0.2em solid green;
+
+
+	}
+
+</style>
+
+<script type="text/javascript">
+
+	function setCookie() {
+		document.cookie = "Login = 123";
+		console.log(document.cookie);
+	}
+
+	function getCookie() {
+		alert(document.cookie);
+	}
+
+	function deleteCookie() {
+		document.cookie = "";
+	}
+
+
+
+
+
+</script>
+
+</head>
+<body>
+
+	<!-- <input type="button" value="setCookie" name="" onclick="setCookie()">
+	<input type="button" value="getCookie" name="" onclick="getCookie()">
+	<input type="button" value="deleteCookie" name="" onclick="deleteCookie()"> -->
+
+
+	<!-- <img src="../img/Beer.png"> -->
+
+	<div class="img"></div>
+	
+</body>
+</html>
