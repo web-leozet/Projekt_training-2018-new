@@ -15,6 +15,11 @@
 		text-transform: uppercase;
 		border: 1px solid transparent;
 		border-radius: 0.3em;
+		text-align: center;
+		width: 155px;
+	}
+	a.btn{
+		transition: all 0.5s ease-out;
 	}
 
 	.sidebar{
@@ -25,12 +30,21 @@
 		width: 300px;
 		background-color: silver;
 		color: #333;
-		transition: transform 0.3s ease-out;
+		transition: all 0.3s ease-out;
 	}
 
 	.sidebar.is-hidden{
 		transform: translateX(300px);
 	}
+
+	.one{
+		width: 300px;
+		color: red;
+		text-transform: lowercase;
+		transition: all 0.5s ease-out;
+	}
+
+
 
 	.sidebar ul{
 		margin: 0;
@@ -51,6 +65,8 @@
 		color: #fff;
 		text-decoration: none;
 	}
+
+	
 
 </style>
 
@@ -90,6 +106,6 @@
 
 
 <script src="common.js"></script>
-	
+
 </body>
 </html>
