@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slider</title>
+
+	<style type="text/css">
+	.icon{
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		transition: .5s;
+	}
+
+	.is-hidden{
+		-webkit-transform: translateX(60px);
+		-ms-transform: translateX(60px);
+		-o-transform: translateX(60px);
+		transform: translateX(60px);
+	}
+	a{
+		display: inline-block;
+		text-decoration: none;
+		padding: 10px 20px;
+		background-color: silver;
+	}
+</style>
+
+<script type="text/javascript">
+
+	window.onload = function () {
+		var button = document.querySelector('.btn');
+		var icon = document.querySelector('.icon');
+		console.log(icon);
+
+		button.addEventListener('click', function (e) {
+			icon.classList.toggle('is-hidden')
+		}, false);
+	}
+
+</script>
+
+</head>
+<body>
+
+	<a href="#" class="btn">Click mi</a>
+
+	<img class="icon is-hidden" src="../img/19285.jpg">
+
+	
+</body>
+</html>

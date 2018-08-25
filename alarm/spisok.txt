@@ -1,0 +1,4 @@
+querySelector
+addEventListener // Слушатель событий
+classList
+classList.toggle('is-hidden') // добавляет или удаляет класс
