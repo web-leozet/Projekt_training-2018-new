@@ -1,10 +1,8 @@
-
-
 var button = document.querySelector('.btn');
 var sidebar = document.querySelector('.sidebar');
 console.log(sidebar);
 
-button.addEventListener('click', function (e) {
+button.addEventListener('click', function(e) {
 	sidebar.classList.toggle('is-hidden')
 	button.classList.toggle('one')
 }, false);
@@ -19,11 +17,6 @@ button.onclick = function () {
 };*/
 
 var linkOne = document.querySelector('.one');
-linkOne.onclick = function () {
+linkOne.onclick = function() {
 	alert('Link 1');
 }
-
-
-
-
-

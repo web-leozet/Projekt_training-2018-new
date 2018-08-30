@@ -115,7 +115,7 @@ switch(number) {
 			alert('Ошибка');
 		}*/
 
-		/*????????????????????????????????????????*/
+/*????????????????????????????????????????*/
 
 /*var a = +prompt('Число А');
 var b = +prompt('Число Б');
@@ -343,7 +343,6 @@ document.write(topr);*/
 
 
 
-
 /*var arr = ['January','February','March','April','May','June'];
 
 var sast = arr.push("[1,2,3,4,5,5]");
@@ -353,7 +352,7 @@ document.write(arr.join(', '));*/
 /*?????????????????????????????????????????????????*/
 /*??????????????????????????????????????????????????*/
 
- /*function MyFirstFanction() {
+/*function MyFirstFanction() {
  	document.write("<p> Привет Это Я.");
  	document.write("<p> Привет Это Она.");
  	document.write("<p> Привет Это Они.");
@@ -531,7 +530,6 @@ if ("createSecondFloor" in house) {
 for (prop in house) {
 	document.write(house[prop]);
 }*/
-
 
 
 
@@ -763,15 +761,12 @@ PrintMessage("kjshdkahd");*/
 
 
 
-
 //   События
 
 
 /*function MyClick() {
 	alert('Внимание!!!\n---------------\nКнопка нажата!\nНадихнувшись недавньою погодою, ми проаналізували, що походи із парасолею');
 }*/
-
-
 
 
 
@@ -834,9 +829,7 @@ function clearss() {
 
 
 
-
-
-	// Location
+// Location
 
 
 /*	(function function_name(argument) {
@@ -847,12 +840,6 @@ function clearss() {
 		document.write("Pathname =  " + document.location.pathname + "<br/>");
 		document.write("Search =  " + document.location.search + "<br/>");
 	})();*/
-
-
-
-
-
-
 
 
 
@@ -882,22 +869,11 @@ function clearss() {
 	}*/
 
 
-	// Ширина и высота окна браузера
+// Ширина и высота окна браузера
 
 /*	window.onload = function () {
 		alert("Ширинa окна : " + screen.width + " см." + "\n" + "Высота окна: " + screen.height + " см.");
 	}*/
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -964,8 +940,8 @@ console.log(result);
 document.write(result);*/
 
 
-document.write("<br/>");
-document.write("<br/>");
+// document.write("<br/>");
+// document.write("<br/>");
 
 
 /*var pattern = /\d\d\d/;
@@ -989,29 +965,19 @@ if (pattern.test(input)) {
 console.log("hello");*/
 
 
- /*   var vm = new Vue({
-        el: '#app',
-        data: {
-            price: 5.00,
-            quantity: 2
-        },
-        computed: {
-            totalPriceWithTax() {
-                return this.price * this.quantity * 1.03
-            }
-        }
+/*   var vm = new Vue({
+       el: '#app',
+       data: {
+           price: 5.00,
+           quantity: 2
+       },
+       computed: {
+           totalPriceWithTax() {
+               return this.price * this.quantity * 1.03
+           }
+       }
 
-    })*/
-
-
-
-
-
-
-
-
-
-
+   })*/
 
 
 
@@ -1037,11 +1003,7 @@ data.price = 20 // при установке свойства вызываетс
 // DOM  Learn JS
 
 
-	// window.open("https://booking.uz.gov.ua/authorization/");
-	
-
-
-
+// window.open("https://booking.uz.gov.ua/authorization/");
 
 
 
@@ -1052,7 +1014,4 @@ data.price = 20 // при установке свойства вызываетс
 	})();*/
 
 
-
-
-
-
+alert('привет');
