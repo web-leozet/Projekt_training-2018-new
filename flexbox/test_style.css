@@ -1,0 +1,32 @@
+.parent{
+	max-width: 1000px;
+	margin: 20px auto;
+	border: 1px solid #000;
+	text-align: center;
+}
+.bl{
+	border: 1px solid orange;
+	padding: 10px 10px;
+	margin: 20px;
+	background-color: #f0f0e9;
+	width: 250px;
+}
+
+.parent{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: stretch;
+}
+.bl{
+	display: flex;
+	flex-flow: row wrap;
+	flex: 1 1 200px;
+}
+
+.fb1{flex: 1 1 100%;}
+.fb2{}
+.fb3{}
+.fb4{}
+.fb5{}
+.fb6{}

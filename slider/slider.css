@@ -1,0 +1,22 @@
+header{
+	max-width: 650px;
+	margin: 0 auto;
+}
+.slick-slide{
+	margin: 10px;
+}
+
+.slick-slide img{
+	max-width: 100%;
+	margin: 10px;
+}
+
+.slick-prev:before, .slick-next:before{
+	font-family: 'slick';
+	font-size: 20px;
+	line-height: 1;
+	opacity: .75;
+	color: #be4949 !important;
+}
+
+
